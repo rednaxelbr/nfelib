@@ -1,0 +1,12 @@
+name: nfelib
+version: 0.1.0
+description: >-
+  A library for brazilian Nota Fiscal Eletrônica (NFe)
+repository: https://github.com/rednaxelbr/nfelib
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dev_dependencies:
+  test: ^1.16.0
+
