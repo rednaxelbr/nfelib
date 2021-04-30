@@ -64,7 +64,19 @@
       
 <section class="desc markdown">
   <h1 id="nfelib">nfelib</h1>
-<p>Biblioteca Dart para NFe</p>
+<p>Dart Library for brazilian Nota Fiscal Eletrônica (NFe)</p>
+<h2 id="introduction">Introduction</h2>
+<p>The brazilian DANFE (Documento Auxiliar da NFe) has a 44-digit key (Chave de Acesso) and a Check Digit (Dígito Verificador, or DV). This library provides functions for:</p>
+<ul>
+<li>Calculate the Check Digit from a 43-digit key</li>
+<li>Validate a 44-digit key for its Check Digit</li>
+</ul>
+<h2 id="example">Example</h2>
+<pre class="language-dart"><code class="language-dart">    if (!chaveNfeValida(_codBarras)) {
+      Fluttertoast.showToast(msg: "DANFE com DV inválido, leia novamente");
+      return;
+    }
+</code></pre>
 </section>
 
 
@@ -91,7 +103,7 @@
 <footer>
   <span class="no-break">
     nfelib
-      1.0.1-dev
+      0.1.0
   </span>
 
   
